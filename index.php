@@ -56,6 +56,6 @@ GROUP BY stations.station_id";
     ?>
     </tbody>
     </table>
-    <p>Want us to list your system here, too? This option is currently being worked on... <!--<a href="./submit-a-station">Learn more here.</a>--></p>
+    <p>Want us to list your system here, too? <a href="./submit-a-station">Learn more here.</a></p>
 </body>
 </html>
