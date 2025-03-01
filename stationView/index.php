@@ -85,7 +85,7 @@ error_reporting(E_ALL);
     <tbody>
     <?php
 
-    $connect = new mysqli(<db info here>) or die("pripojeni se nezdarilo");
+    $connect = new mysqli(<your db details here>) or die("pripojeni se nezdarilo");
 
     $connect->set_charset("utf8") or die("Charset chyba.");
 

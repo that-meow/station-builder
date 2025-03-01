@@ -22,7 +22,7 @@
     </style>
 </head>
 <?php
-    $connect = new mysqli(<db info here>) or die("pripojeni se nezdarilo");
+    $connect = new mysqli(<your db details here>) or die("pripojeni se nezdarilo");
     $connect->set_charset("utf8") or die("Charset chyba.");
     $query = "SELECT stations.station_id, stations.system_name, stations.system_architect, SUM(relations.original_amount) AS total_original, SUM(relations.current_amount) AS total_current FROM `stations`
 LEFT JOIN relations ON stations.station_id = relations.station_id
@@ -56,5 +56,6 @@ GROUP BY stations.station_id";
     ?>
     </tbody>
     </table>
+    <p>Want us to list your system here, too? This option is currently being worked on... <!--<a href="./submit-a-station">Learn more here.</a>--></p>
 </body>
 </html>

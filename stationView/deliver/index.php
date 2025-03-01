@@ -58,7 +58,7 @@ error_reporting(E_ALL);
 <?php
     if(!empty($_POST["request_type"])) {
         if ($_POST["request_type"] == "deliver") {
-            $connect = new mysqli(<db info here>) or die("pripojeni se nezdarilo");
+            $connect = new mysqli(<your db details here>) or die("pripojeni se nezdarilo");
             $connect->set_charset("utf8") or die("Charset chyba.");
 
                 $stmt = $connect->prepare("UPDATE `relations`
@@ -71,7 +71,7 @@ error_reporting(E_ALL);
             
         }
         elseif ($_POST["request_type"] == "set") {
-            $connect = new mysqli(<db info here>) or die("pripojeni se nezdarilo");
+            $connect = new mysqli(<your db details here>) or die("pripojeni se nezdarilo");
             $connect->set_charset("utf8") or die("Charset chyba.");
 
             $stmt = $connect->prepare("UPDATE `relations`
